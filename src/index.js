@@ -6,10 +6,6 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
-const port = process.env.PORT || 3000
-
-app.set('port', port)
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -35,8 +31,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(app.get('port'), function(){
-    console.log(`Server running on port: ${app.get('port')}`)
+app.listen(3001, function(){
+    console.log(`Server running on port: 3001`)
 })
 
 module.exports = app;
