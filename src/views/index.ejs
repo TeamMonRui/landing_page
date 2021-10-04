@@ -1,232 +1,277 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Montoya and john</title>
 </head>
+
 <body>
-<!--Banner-->
-<div class="banner">
-  <header>
-    <a href="#" class="logo">Montoya & John</a>
-    <div class="toggle"></div>
-  </header>
-  <img src="/images/fondo2.jpg">
-  <div class="content">
-    <h2>Sucess by Design</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-      nostrum iusto praesentium corporis fuga aut at est qui excepturi labore. Assumenda odio mollitia eaque minima, quod vel sapiente nemo culpa?.
-      <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, consequatur culpa optio voluptates error qui cupiditate consequuntur consectetur quos molestiae earum hic vero? Sint deleniti ducimus
-      soluta blanditiis, reprehenderit adipisci?
-    </p>
-  </div>
+    <!--Banner-->
+    <header>
+        <img src="/images/fondo1.jpg">
+        <class class="conten-logo">
+            <a href="#" class="logo">Montoya & John</a>
+        </class>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a  Class="About">About</a></li>
+                <li><a href="#page-3">Servicios</a></li>
+                <li><a href="#page-4">Tecnologias</a></li>
+                <li><a href="#Contactanos">Contactanos</a></li>
+            </ul>
+        </nav>
 
-</div>
+        <div class="toggle"></div>
 
-<!--About-->
-<section class="about">
-  <div class="contentBx">
-    <h2 class="heading">Sobre nosotros</h2>
-    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quis, est facilis ad molestiae iusto!
-      Totam illo consequatur ipsa accusantium odit perferendis, quis adipisci sunt obcaecati
-      vero illum eos beatae?
-    </p>
-    <div class="developers">
-      <div class="John">John</div>
-      <div class="Montoya">Montoya</div>
-    </div>
-  </div>
+        <div class="content">
+            <h2>Bienvenido</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                nostrum iusto praesentium corporis fuga aut at est qui excepturi labore. Assumenda odio mollitia eaque
+                minima, quod vel sapiente nemo culpa?.
+                <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, consequatur culpa optio
+                voluptates error qui cupiditate consequuntur consectetur quos molestiae earum hic vero? Sint deleniti
+                ducimus
+                soluta blanditiis, reprehenderit adipisci?
+            </p>
+        </div>
+    </header>
+    <script>
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 1);
+        });
 
-  <div class="imgBx">
-    <div class="A-card">
-      <div class="A-circle"></div>
-      <div class="A-content">
-        <h2>John Ruiz</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus illo
-          aperiam quibusdam beatae accusantium, sapiente cupiditate.
-        </p>
-        <a href="#">Click me</a>
-      </div>
-      <img src="/images/pepsi.png" alt="">
-    </div>
+        const navigation = document.querySelector('nav');
 
-    <div class="A-card">
-      <div class="A-circle"></div>
-      <div class="A-content">
-        <h2>Montoya</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus illo
-          aperiam quibusdam beatae accusantium, sapiente cupiditate.
-        </p>
-        <a href="#">Click me</a>
-      </div>
-      <img src="/images/pepsi.png" alt="">
-    </div>
-  </div>
+        document.querySelector('.toggle').onclick = function () {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+            
+        }
+
+        document.querySelector('.About').onclick = function () {
+            window.scroll(0, 100);
+            
+        }
+
+    </script>
 
 
-</section>
-
-<!--Service-->
-<section class="services">
-  <h2 class="heading">Our Services</h2>
-  <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae vestibulum neque mattis ac. Praesent commodo,
-    lacus ut tempus tempus, ex urna molestie magna, non interdum mi nunc sed nisi. Vivamus varius dapibus ultrices. Fusce quis augue quis erat ultrices vestibulum sit amet in ligula. Orci varius natoque penatibus et magnis dis parturient montes,
-    nascetur ridiculus mus. Sed lobortis erat et eros sagittis, dignissim ornare nunc pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis bibendum sem quis dui fringilla fermentum.
-  </p>
-
-  <div class="container">
-    <div class="card">
-      <div class="content">
-        <h2>01</h2>
-        <h3>Card one</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#">Read more</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="content">
-        <h2>02</h2>
-        <h3>Card two</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#">Read more</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="content">
-        <h2>03</h2>
-        <h3>Card three</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#">Read more</a>
-      </div>
-    </div>
-  </div>
-
-  <script type="text/javascript" src="/javascripts/vanilla-tilt.js"></script>
-  <script>
-    VanillaTilt.init(document.querySelectorAll(".card"),{
-      max: 25,
-      speed: 400,
-      glare:true,"max-glare":1,
-    });
-  </script>
-</section>
-
-<!--Technology-->
-<section class="technology">
-  <div class="contentBx">
-    <h2 class="heading">we use cutting edge technology</h2>
-    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae vestibulum neque mattis ac. Praesent commodo,
-      lacus ut tempus tempus, ex urna molestie magna, non interdum mi nunc sed nisi. Vivamus varius dapibus ultrices. Fusce quis augue quis erat ultrices vestibulum sit amet in ligula. Orci varius natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Sed lobortis erat et eros sagittis, dignissim ornare nunc pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis bibendum sem quis dui fringilla fermentum.</p>
-  </div>
-  <div class="imgBx">
-    <img src="/images/tech.png">
-  </div>
-</section>
-
-<!--Client
-<section class="client">
-    <h2 class="heading">Our Client</h2>
-    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae vestibulum neque mattis ac. Praesent commodo,
-        lacus ut tempus tempus, ex urna molestie magna, non interdum mi nunc sed nisi. Vivamus varius dapibus ultrices. Fusce quis augue quis erat ultrices vestibulum sit amet in ligula. Orci varius natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Sed lobortis erat et eros sagittis, dignissim ornare nunc pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis bibendum sem quis dui fringilla fermentum.
-    </p>
-    <div class="imgBx">
-        <img src="img/brand1.png">
-        <img src="img/brand2.png">
-        <img src="img/brand3.png">
-        <img src="img/brand4.png">
-    </div>
-</section>
--->
-
-<!--Testimonials
-<section class="testimonials">
-    <h2 class="heading">What Our Client Says</h2>
-    <div class="container">
+    <!--About-->
+    <section class="about">
+        <scroll-page id="page-2"></scroll-page>
         <div class="contentBx">
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae vestibulum neque mattis ac.
-                </p><br>
-                <h3>Someone Famous</h3>
+            <h2 class="heading">Sobre nosotros</h2>
+            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to
+                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                Letraset sheets containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quis, est
+                facilis ad molestiae iusto!
+                Totam illo consequatur ipsa accusantium odit perferendis, quis adipisci sunt obcaecati
+                vero illum eos beatae?
+            </p>
+        </div>
+
+        <div class="imgBx">
+            <div class="A-card">
+                <div class="A-circle"></div>
+                <div class="A-content">
+                    <h2>John Ruiz</h2>
+                    <p>Developer & Data analitcs
+                    </p>
+                    <a href="#">Click me</a>
+                </div>
+                <img src="/images/JohnSf2.png" alt="">
+            </div>
+
+            <div class="A-card">
+                <div class="A-circle"></div>
+                <div class="A-content">
+                    <h2>Francisco Montoya</h2>
+                    <p>Developer Full Stack
+                    </p>
+                    <a href="#">Click me</a>
+                </div>
+                <img src="/images/pepsi.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!--Service-->
+    <scroll-page id="page-3"></scroll-page>
+    <section class="services">
+        <h2 class="heading">Nuestros servicios</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac
+            ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae
+            vestibulum neque mattis ac. Praesent commodo,
+            lacus ut tempus tempus, ex urna molestie magna, non interdum mi nunc sed nisi. Vivamus varius dapibus
+            ultrices. Fusce quis augue quis erat ultrices vestibulum sit amet in ligula. Orci varius natoque penatibus
+            et magnis dis parturient montes,
+            nascetur ridiculus mus. Sed lobortis erat et eros sagittis, dignissim ornare nunc pretium. Interdum et
+            malesuada fames ac ante ipsum primis in faucibus. Duis bibendum sem quis dui fringilla fermentum.
+        </p>
+
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Desarrollo web</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Aplicaciones moviles</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Analisis estadistico</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Read more</a>
+                </div>
             </div>
         </div>
 
+        <script type="text/javascript" src="/javascripts/vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                glare: true, "max-glare": 1,
+            });
+        </script>
+    </section>
+
+    <!--Technology-->
+    <scroll-page id="page-4"></scroll-page>
+    <section class="technology">
         <div class="contentBx">
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae vestibulum neque mattis ac.
-                </p><br>
-                <h3>Someone Famous</h3>
+            <h2 class="heading">Utilizamos tecnología de punta</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac
+                ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae
+                vestibulum neque mattis ac. Praesent commodo,
+                lacus ut tempus tempus, ex urna molestie magna, non interdum mi nunc sed nisi. Vivamus varius dapibus
+                ultrices. Fusce quis augue quis erat ultrices vestibulum sit amet in ligula. Orci varius natoque
+                penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Sed lobortis erat et eros sagittis, dignissim ornare nunc pretium. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Duis bibendum sem quis dui fringilla fermentum.</p>
+        </div>
+        <div class="imgBx">
+            <img src="/images/tech.png">
+        </div>
+    </section>
+
+    <!--Client
+    <section class="client">
+        <h2 class="heading">Our Client</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae vestibulum neque mattis ac. Praesent commodo, 
+            lacus ut tempus tempus, ex urna molestie magna, non interdum mi nunc sed nisi. Vivamus varius dapibus ultrices. Fusce quis augue quis erat ultrices vestibulum sit amet in ligula. Orci varius natoque penatibus et magnis dis parturient montes, 
+            nascetur ridiculus mus. Sed lobortis erat et eros sagittis, dignissim ornare nunc pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis bibendum sem quis dui fringilla fermentum.
+        </p>
+        <div class="imgBx">
+            <img src="/images/brand1.png">
+            <img src="/images/brand2.png">
+            <img src="/images/brand3.png">
+            <img src="/images/brand4.png">
+        </div>
+    </section>
+    -->
+
+    <!--Testimonials
+    <section class="testimonials">
+        <h2 class="heading">What Our Client Says</h2>
+        <div class="container">
+            <div class="contentBx">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae vestibulum neque mattis ac.  
+                    </p><br>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+
+            <div class="contentBx">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae vestibulum neque mattis ac. 
+                    </p><br>
+                    <h3>Someone Famous</h3>
+                </div>
             </div>
         </div>
-    </div>
-</section>
--->
+    </section>
+    -->
 
 
-<!--Contact-->
-<section class="contact">
-  <h2 class="heading">Contact us</h2>
-  <p class="text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed aliquet dui, ac ultrices magna. Vestibulum feugiat lacus vitae accumsan lobortis. Praesent pulvinar justo elit, vitae vestibulum neque mattis ac.
-  </p>
+    <!--Contact-->
+    <section class="contact">
+        <a name="Contactanos"></a>
+        <h2>Contactanos</h2>
 
-</section>
+        <div class="c-about">
+            <div class="c-contentBx redbg">
+                <form class="form" id="contact-form" action="/send" method="post">
+                    <div class="inputBx">
+                        <input type="text" id="name" name="name" placeholder="Nombre completo">
+                    </div>
+                    <div class="inputBx">
+                        <input type="text" id="email" name="email" placeholder="Correo electronico">
+                    </div>
+                    <div class="inputBx">
+                        <input type="text" id="phone" name="phone" placeholder="Telefono">
+                    </div>
+                    <div class="inputBx">
+                        <textarea name="comment" id="comment" cols="10" rows="2" placeholder="Escribenos tus mensage aqui"></textarea>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+            <div class="imgBx2"></div>
+        </div>
+    </section>
 
-<section class="about">
-  <div class="contentBx redbg">
-    <form class="form" id="contact-form" action="/send" method="post">
-      <div class="inputBx">
-        <input type="text" name="name" placeholder="Full Name" id="name">
-      </div>
-      <div class="inputBx">
-        <input type="email" name="email" placeholder="Email Address" id="email">
-      </div>
-      <div class="inputBx">
-        <input type="text" minlength="10" name="phone" placeholder="Mobile No." id="phone">
-      </div>
-      <div class="inputBx">
-        <textarea name="comment" id="comment" cols="20" rows="2" placeholder="Write your message here" ></textarea>
-      </div>
-      <div class="inputBx">
-        <input type="submit" value="Send">
-      </div>
-    </form>
-  </div>
-  <div class="imgBx2"></div>
-</section>
+    <!--Footer-->
+    <section class="footer">
+        <p class="text">Design & Developed</p>
+        <ul>
+            <p class="text">Follow us on:</p>
+            <li><a href=""><img src="/images/facebook.png"></a></li>
+            <li><a href=""><img src="/images/twitter.png"></a></li>
+            <li><a href=""><img src="/images/linkedin.png"></a></li>
+        </ul>
+    </section>
 
-<!--Footer-->
-<section class="footer">
-  <p class="text">Design & Developed</p>
-  <ul>
-    <p class="text">Follow us on:</p>
-    <li><a href=""><img src="/images/facebook.png"></a></li>
-    <li><a href=""><img src="/images/twitter.png"></a></li>
-    <li><a href=""><img src="/images/linkedin.png"></a></li>
-  </ul>
-</section>
-
-<script type="text/javascript">
-  let r = '<%=rou%>';
-  let status = '<%= state%>';
-
-  if(status === '0' && r === 's'){
-    alert('El comentario ha sido enviado correctamente.')
-  }else if(status === '-1' && r === 's') {
-    alert('El comentario no ha sido enviado.')
-  }
-</script>
-<script src="/javascripts/main.js"></script>
+    <script type="text/javascript">
+        let r = '<%=rou%>';
+        let status = '<%= state%>';
+      
+        if(status === '0' && r === 's'){
+          alert('El comentario ha sido enviado correctamente.')
+        }else if(status === '-1' && r === 's') {
+          alert('El comentario no ha sido enviado.')
+        }
+      </script>
+    <script src="/javascripts/main.js"></script>
 </body>
 </html>
