@@ -12,7 +12,7 @@ emailController.send = async function(name, email, phone, comment){
     try {
         await sgMail.send({
             from: 'franciscomontoyacasual@gmail.com',
-            to: 'franciscomontoyaes@gmail.com',
+            to: 'team.development.monrui@gmail.com',
             subject: 'Comentario de la web',
             text: message_body
         })
