@@ -60,13 +60,13 @@ if (screen.width < 991) {
             window.scroll(0, 80);
         }
         document.querySelector('.Servicios').onclick = function () {
-            window.scroll(0, 650);
+            window.scroll(0, 750);
         }
         document.querySelector('.Tecnologias').onclick = function () {
-            window.scroll(0, 2120);
+            window.scroll(0, 2550);
         }
         document.querySelector('.Contactanos').onclick = function () {
-            window.scroll(0, 2800);
+            window.scroll(0, 3500);
         }
 
     };
