@@ -30,7 +30,7 @@ if (screen.width < 991) {
 
 
         /*targetas de servicio*/
-        if (y > 900 && y < 1200) {
+        if (y > 1000 && y < 1300) {
             info1.style.transform = "translateY(0px)";
             info1.style.opacity = "1";
         } else {
@@ -38,7 +38,7 @@ if (screen.width < 991) {
             info1.style.opacity = "0";
         }
 
-        if (y > 1250 && y < 1400) {
+        if (y > 1250 && y < 1600) {
             info2.style.transform = "translateY(0px)";
             info2.style.opacity = "1";
         } else {
@@ -46,7 +46,7 @@ if (screen.width < 991) {
             info2.style.opacity = "0";
         }
 
-        if (y > 1450 && y < 1700) {
+        if (y > 1450 && y < 2200) {
             info3.style.transform = "translateY(0px)";
             info3.style.opacity = "1";
         } else {
@@ -54,40 +54,11 @@ if (screen.width < 991) {
             info3.style.opacity = "0";
         }
 
-
-        /*Despazamiento de scroll para el nav "Cel"*/
-        document.querySelector('.Nosotros').onclick = function () {
-            window.scroll(0, 80);
-        }
-        document.querySelector('.Servicios').onclick = function () {
-            window.scroll(0, 750);
-        }
-        document.querySelector('.Tecnologias').onclick = function () {
-            window.scroll(0, 2550);
-        }
-        document.querySelector('.Contactanos').onclick = function () {
-            window.scroll(0, 3500);
-        }
-
     };
 
 
 
-} else {
-    /*Despazamiento de scroll para el nav "compu"*/
-    document.querySelector('.Nosotros').onclick = function () {
-        window.scroll(0, 115);
-    }
-    document.querySelector('.Servicios').onclick = function () {
-        window.scroll(0, 800);
-    }
-    document.querySelector('.Tecnologias').onclick = function () {
-        window.scroll(0, 1600);
-    }
-    document.querySelector('.Contactanos').onclick = function () {
-        window.scroll(0, 2800);
-    }
-}
+} 
 
 
 
